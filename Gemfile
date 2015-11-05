@@ -14,6 +14,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'semantics3'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
