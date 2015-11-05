@@ -16,6 +16,8 @@ gem 'instagram'
 
 gem 'shotgun'
 
+gem 'bing-search'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

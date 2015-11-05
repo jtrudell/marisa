@@ -45,7 +45,15 @@
 
   <div id="shop">scroll some shopping stuff here</div>
 
-  <div id="articles">add articles here</div>
+  <div id="articles">
+    <%@articles.each do |article|%>
+      <span class='article-span'>
+        <a href="<%=article.url%>"><%=article.title%></a>
+        <p><%=article.description%><br><br>
+      </span>
+    <%end%>
+
+  </div>
 
 
   <footer>footer stuff here</footer>
