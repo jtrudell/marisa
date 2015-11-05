@@ -12,7 +12,18 @@ html {
 .container {
   width: 75%;
   margin: 0 auto;
+  font-family: "brandon", serif;
 }
+
+a {
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+a:hover {
+  color: #5B6AAB;
+}
+
 
 /*HEADER STYLES*/
 
@@ -30,7 +41,13 @@ header {
   float: left;
 }
 
+#upper-right-header-container {
+  display: inline-block;
+  float: right;
+}
+
 #site-name {
+  font-size: 4em;
   width: 250px;
   margin: 0 auto;
 }
@@ -45,10 +62,7 @@ header {
   text-align: left;
 }
 
-#upper-right-header-container {
-  display: block;
-  float: right;
-}
+
 
 
 nav {
@@ -115,9 +129,24 @@ main {
 #articles {
   width: 75%;
   margin: 0 auto;
-  height: 500px;
   display: block;
-  background: green;
+  background: white;
+  padding: 1em;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#articles a {
+  color: #333333;
+  font-size: 1.25em;
+}
+
+.article-span {
+  width: 60%;
+  margin: 0 auto;
+  color: darkgray;
 }
 
 /*FOOTER STYLING*/
