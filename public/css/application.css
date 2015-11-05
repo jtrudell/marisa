@@ -1,0 +1,68 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*HEADER STYLES*/
+
+header {
+
+}
+
+#top-header {
+  border-bottom: 2px solid black;
+  height: 100px;
+}
+
+#upper-left-header-container {
+  display: inline-block;
+  float: left;
+}
+
+#social {
+
+}
+
+#site-name {
+  width: 250px;
+  margin: 0 auto;
+}
+
+#upper-right-header-container {
+  display: inline-block;
+  float: right;
+}
+
+#login-signup {
+
+}
+
+#search {
+
+}
+
+nav {
+
+}
+
+nav ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
