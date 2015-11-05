@@ -1,0 +1,131 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*HEADER STYLES*/
+
+header {
+
+}
+
+#top-header {
+  border-bottom: 2px solid black;
+  height: 100px;
+}
+
+#upper-left-header-container {
+  display: inline-block;
+  float: left;
+}
+
+#social {
+
+}
+
+#site-name {
+  width: 250px;
+  margin: 0 auto;
+}
+
+#upper-right-header-container {
+  display: inline-block;
+  float: right;
+}
+
+#login-signup {
+
+}
+
+#search {
+
+}
+
+nav {
+  border-bottom: 2px solid lightgray;
+}
+
+nav ul {
+    width: 400px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+/*MAIN ELEMENT STYLING*/
+
+main {
+  height: 500px;
+  margin-top: 2em;
+}
+
+#main-content-left {
+  height: 400px;
+  width: 65%;
+  float: left;
+  margin: 0 auto;
+  border: 1px dotted black;
+}
+
+#main-content-right {
+  height: 400px;
+  width: 30%;
+  float: right;
+  margin: 0 auto;
+  border: 1px dotted black;
+}
+
+
+#main-div-footer {
+  height: 50px;
+  width: 75%;
+  margin: 0 auto;
+  background: lightgray;
+  display: block;
+  clear: both;
+  border: 1px solid black;
+}
+
+/*SHOP STYLING*/
+
+#shop {
+  width: 75%;
+  margin: 0 auto;
+  height: 200px;
+  display: block;
+  background: red;
+}
+
+/*ARTICLES STYLING*/
+
+#articles {
+  width: 75%;
+  margin: 0 auto;
+  height: 500px;
+  display: block;
+  background: green;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+  height: 400px;
+  display: block;
+  background: darkgray;
+}
