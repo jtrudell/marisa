@@ -30,11 +30,6 @@ header {
   float: left;
 }
 
-#social {
-  display: inline-block;
-  float: left;
-}
-
 #site-name {
   width: 250px;
   margin: 0 auto;
@@ -55,13 +50,6 @@ header {
   float: right;
 }
 
-#login-signup {
-
-}
-
-#search {
-
-}
 
 nav {
   border-bottom: 2px solid lightgray;
