@@ -66,6 +66,8 @@ header {
 
 
 nav {
+  width: 75%;
+  margin: 0 auto;
   border-bottom: 2px solid lightgray;
 }
 
@@ -84,29 +86,26 @@ nav li {
 /*MAIN ELEMENT STYLING*/
 
 main {
-  height: 500px;
-  margin-top: 2em;
+  padding: 2em;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #main-content-left {
-  width: 65%;
+  width: 60%;
   float: left;
-  margin: 0 auto;
   border: 1px dotted black;
 }
 
 #main-content-right {
-  height: 400px;
   width: 30%;
   float: right;
   margin: 0 auto;
   border: 1px dotted black;
 }
 
-
 #main-div-footer {
   height: 50px;
-  width: 75%;
   margin: 0 auto;
   background: lightgray;
   display: block;
@@ -117,7 +116,6 @@ main {
 /*SHOP STYLING*/
 
 #shop {
-  width: 75%;
   margin: 0 auto;
   height: 200px;
   display: block;
@@ -127,7 +125,6 @@ main {
 /*ARTICLES STYLING*/
 
 #articles {
-  width: 75%;
   margin: 0 auto;
   display: block;
   background: white;
@@ -152,7 +149,7 @@ main {
 /*FOOTER STYLING*/
 
 footer {
-  height: 400px;
+  height: 200px;
   display: block;
   background: darkgray;
 }
