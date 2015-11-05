@@ -14,7 +14,7 @@ gem 'rake'
 
 gem 'shotgun'
 
-gem 'semantics3'
+gem 'bing-search'
 
 group :test do
   gem 'shoulda-matchers'
