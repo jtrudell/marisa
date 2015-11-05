@@ -30,27 +30,26 @@ header {
   float: left;
 }
 
-#social {
-
-}
-
 #site-name {
   width: 250px;
   margin: 0 auto;
 }
 
+#instagram-connect {
+  display: block;
+  text-align: left;
+}
+
+#social-buttons {
+  display: block;
+  text-align: left;
+}
+
 #upper-right-header-container {
-  display: inline-block;
+  display: block;
   float: right;
 }
 
-#login-signup {
-
-}
-
-#search {
-
-}
 
 nav {
   border-bottom: 2px solid lightgray;
@@ -76,7 +75,6 @@ main {
 }
 
 #main-content-left {
-  height: 400px;
   width: 65%;
   float: left;
   margin: 0 auto;
