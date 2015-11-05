@@ -31,7 +31,8 @@ header {
 }
 
 #social {
-
+  display: inline-block;
+  float: left;
 }
 
 #site-name {
@@ -39,8 +40,18 @@ header {
   margin: 0 auto;
 }
 
+#instagram-connect {
+  display: block;
+  text-align: left;
+}
+
+#social-buttons {
+  display: block;
+  text-align: left;
+}
+
 #upper-right-header-container {
-  display: inline-block;
+  display: block;
   float: right;
 }
 
