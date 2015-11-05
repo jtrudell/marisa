@@ -1,3 +1,4 @@
 get "/" do
-  redirect "/tags"
+  @articles = find_articles
+  erb :index
 end
