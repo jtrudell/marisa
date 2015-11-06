@@ -39,7 +39,7 @@ header {
 }
 
 #upper-left-header-container {
-  margin-top: 1em;
+  margin-top: 2.5em;
   display: inline-block;
   float: left;
 }
@@ -108,25 +108,37 @@ main {
   margin: 0 auto;
 }
 
+
 #main-content-left {
-  width: 60%;
+  width: 55%;
+  padding-left: 1em;
   float: left;
   margin-bottom: 2em;
   color: #D3A7FF;
 
 }
 
+#main-content-left h3 {
+  margin-top: 0;
+}
+
+#main-content-right h3 {
+  margin-top: 0;
+}
+
 #main-content-right {
   width: 40%;
   float: right;
   margin: 0 auto;
-  margin-top: 1em;
+  margin-right: -1em;
   padding-left: 1em;
   color: #D3A7FF;
 }
 
 #main-content-right img {
   padding: 0.25em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 
 #main-div-footer {
@@ -135,7 +147,7 @@ main {
   padding-bottom: 0;
   text-align: center;
   margin: 0 auto;
-  margin-top: 0;
+  margin-top: 1em;
   background: whitesmoke;
   display: block;
   clear: both;
@@ -204,16 +216,18 @@ main {
 
 /*FOOTER STYLING*/
 
-footer {
-
+footer #images {
+  width: 65%;
   height: 165px;
   display: block;
   background-size: contain;
   background-image: url('../images/combined.jpeg');
   opacity: .85;
+  margin: 0 auto;
 }
 
 footer p {
   text-align: center;
   color: gray;
+  padding-bottom: 1em;
 }
