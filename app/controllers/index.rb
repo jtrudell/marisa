@@ -60,7 +60,7 @@ end
 
 get "/user_media_feed" do
   client = Instagram.client(:access_token => session[:access_token])
-  user = client.user
+  user = client.user_search("msg0927")
   html = "<h1>#{user.username}'s media feed</h1>"
 
   page_1 = client.user_media_feed(777)
@@ -82,7 +82,7 @@ get "/user_search" do
   client = Instagram.client(:access_token => session[:access_token])
   html = "<h1>Search for users on instagram, by name or usernames</h1>"
   for user in client.user_search("msg0927")
-    page = user.media_feed(10)
+    page = client.user.media_feed(10)
     for media_item in page
       html << "<img src='#{media_item.images.thumbnail.url}'>"
     end
@@ -99,14 +99,5 @@ get "/tags" do
   for media_item in client.tag_recent_media(tags[0].name)
     html << "<img src='#{media_item.images.thumbnail.url}'>"
   end
-  html
-end
-
-get "/limits" do
-  client = Instagram.client(:access_token => session[:access_token])
-  html = "<h1/>View API Rate Limit and calls remaining</h1>"
-  response = client.utils_raw_response
-  html << "Rate Limit = #{response.headers[:x_ratelimit_limit]}.  <br/>Calls Remaining = #{response.headers[:x_ratelimit_remaining]}"
-
   html
 end
