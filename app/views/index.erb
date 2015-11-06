@@ -30,6 +30,7 @@
 
   <main>
     <div id="main-content-left">
+      <h3>meowrisa of the day</h3>
     <blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC)"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/1A1-WOlFJq/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by Marisa (@msg0927)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-04-03T12:42:33+00:00">Apr 3, 2015 at 5:42am PDT</time></p></div></blockquote>
   </div>
 
@@ -45,17 +46,19 @@
       <p>donate to bideawee!</p>
     </div>
 
-  <div id="shop">scroll some twitter shopping stuff here
+  <div id="twitter-feed">
+    <h2 class="article-header">meowrisa follows</h2>
     <% @twitter_feed.each do |tweet| %>
       <span class="single-tweet">
-        <h3><%=tweet.user.name%></h3>
-        <p><%=tweet.text%></p>
+        <p><a href="<%=tweet.url%>"><%=tweet.text%></a></p>
+        <p>tweeted by: <%=tweet.user.name%></p>
+        <p></p>
       </span>
     <%end%>
   </div>
 
   <div id="articles">
-    <h2 id="article-header">meowrisa recommends</h2>
+    <h2 class="article-header">meowrisa recommends</h2>
     <%@articles.each do |article|%>
       <span class='article-span'>
         <a href="<%=article.url%>"><%=article.title%></a>

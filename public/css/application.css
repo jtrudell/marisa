@@ -145,14 +145,21 @@ main {
 }
 
 
-/*SHOP STYLING*/
+/*TWITTER FEED STYLING*/
 
-#shop {
+#twitter-feed {
   margin: 0 auto;
   margin-top: 2em;
-  height: 200px;
   display: block;
-  background: lightblue;
+  padding: 1em;
+  border-top: 1px solid lightgray;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+#twitter-feed a {
+  color: #333333;
+  font-size: 1.1em;
 }
 
 /*ARTICLES STYLING*/
@@ -179,7 +186,7 @@ main {
   color: darkgray;
 }
 
-#article-header {
+.article-header {
   text-align: center;
   color: #D3A7FF;
 
