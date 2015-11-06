@@ -82,7 +82,7 @@ get "/user_search" do
   client = Instagram.client(:access_token => session[:access_token])
   html = "<h1>Search for users on instagram, by name or usernames</h1>"
   for user in client.user_search("msg0927")
-    html << "<li> user </li>"
+    html << "<li> #{user} </li>"
   end
   html
 end
