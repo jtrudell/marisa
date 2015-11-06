@@ -2,9 +2,9 @@ require "instagram"
 
 
 
-def generate_instagram_images
+def generate_instagram_images(tag)
   client = Instagram.client(:access_token => session[:access_token])
-  tags = client.tag_search('rescuecats')
+  tags = client.tag_search(tag)
   html = []
   img_src_array = []
   for media_item in client.tag_recent_media(tags[0].name)
