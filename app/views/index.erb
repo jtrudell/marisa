@@ -12,21 +12,17 @@
 
       <div id="site-name">meowrisa</div>
 
-      <!-- <div id="upper-right-header-container">
-        <div id="login-signup">login signup links</div>
-        <div id="search">search bar</div>
-      </div> -->
   </div>
 
     <nav>
       <ul>
-        <li>SHOP</li>
-        <li>GO</li>
-        <li>BE</li>
-        <li>DO</li>
-        <li>SEE</li>
-        <li>MAKE</li>
-        <li>GET</li>
+        <li><a href = "/tags/purplefashion">FASHION<a></li>
+        <li><a href = "/tags/bideawee">CATS<a></li>
+        <li><a href = "/tags/spiritjunkie">MEDITATION<a></li>
+        <li><a href = "/tags/eatpraymove">YOGA<a></li>
+        <li><a href = "tags/canyonranch">TRAVEL<a></li>
+        <li><a href = "tags/purple">PURPLE<a></li>
+
       <ul>
     </nav>
 
@@ -38,12 +34,16 @@
   </div>
 
     <div id="main-content-right">
+      <h3>Instagram #<%= @tag_title %></h3>
       <% @instagram_images.each do |image| %>
         <%= image %>
       <% end %>
     </div>
 
-    <div id = "main-div-footer">some stuff in a gray bar here</div>
+    <div id = "main-div-footer">
+      <a herf="https://www.bideawee.org/Donate-Now"><img src="/images/bideawee.png"/>
+      <p>donate to bideawee!</p>
+    </div>
 
   <div id="shop">scroll some twitter shopping stuff here
     <% @twitter_feed.each do |tweet| %>
@@ -55,6 +55,7 @@
   </div>
 
   <div id="articles">
+    <h2 id="article-header">meowrisa recommends</h2>
     <%@articles.each do |article|%>
       <span class='article-span'>
         <a href="<%=article.url%>"><%=article.title%></a>
@@ -63,7 +64,6 @@
     <%end%>
   </div>
 </main>
-
-
-  <footer>footer stuff here</footer>
 </div>
+
+  <footer><p>copyright 2015 ben & jen</p></footer>
