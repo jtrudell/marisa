@@ -2,6 +2,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Kotta One', serif;
+
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -12,16 +14,16 @@ html {
 .container {
   width: 75%;
   margin: 0 auto;
-  font-family: "brandon", serif;
+  color: #A39B9B;
 }
 
 a {
   text-decoration: none;
-  color: #CCCCCC;
+  color: #C7CCC2;
 }
 
 a:hover {
-  color: #5B6AAB;
+  color: #D3A7FF;
 }
 
 
@@ -48,7 +50,11 @@ header {
 #upper-left-header-container div {
   display: inline-block;
   float: left;
-  padding-right: 1em;
+  padding-right: 0.50em;
+}
+
+#upper-left-header-container a:hover {
+  color: #D3A7FF;
 }
 
 #upper-right-header-container {
@@ -60,6 +66,8 @@ header {
   font-size: 4em;
   width: 250px;
   margin: 0 auto;
+  color: #D3A7FF;
+  font-family: 'Kaushan Script', cursive;
 }
 
 #instagram-connect {
@@ -72,14 +80,6 @@ header {
   text-align: left;
 }
 
-.ig-b- { display: inline-block; }
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-32 { width: 32px; height: 32px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-32.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-32 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-32@2x.png); background-size: 60px 178px; } }
-
-
 nav {
   width: 75%;
   margin: 0 auto;
@@ -87,7 +87,7 @@ nav {
 }
 
 nav ul {
-    width: 400px;
+    width: 550px;
     height: 80px;
     margin: 0 auto;
     padding: 2em;
@@ -96,20 +96,21 @@ nav ul {
 nav li {
   list-style: none;
   display: inline-block;
+  color: #C7CCC2;
+  padding-left: 1em;
 }
 
 /*MAIN ELEMENT STYLING*/
 
 main {
   padding: 2em;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
 #main-content-left {
   width: 60%;
   float: left;
-  border: 1px dotted black;
   margin-bottom: 2em;
 
 }
@@ -118,27 +119,47 @@ main {
   width: 40%;
   float: right;
   margin: 0 auto;
-  border: 1px dotted black;
-  margin-top: 2em;
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+#main-content-right img {
+  padding: 0.25em;
 }
 
 #main-div-footer {
-  height: 50px;
+  border-top: 2px solid lightgray;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  text-align: center;
   margin: 0 auto;
-  background: lightgray;
+  margin-top: 0;
+  background: whitesmoke;
   display: block;
   clear: both;
-  border: 1px solid lightgray;
+  font-size: 2em;
 }
 
-/*SHOP STYLING*/
+#main-div-footer p {
+  margin: 0;
+}
 
-#shop {
+
+/*TWITTER FEED STYLING*/
+
+#twitter-feed {
   margin: 0 auto;
   margin-top: 2em;
-  height: 200px;
   display: block;
-  background: lightblue;
+  padding: 1em;
+  border-top: 1px solid lightgray;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+#twitter-feed a {
+  color: #333333;
+  font-size: 1.1em;
 }
 
 /*ARTICLES STYLING*/
@@ -151,7 +172,7 @@ main {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   margin-top: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 
 #articles a {
@@ -165,12 +186,24 @@ main {
   color: darkgray;
 }
 
+.article-header {
+  text-align: center;
+  color: #D3A7FF;
+
+}
+
 /*FOOTER STYLING*/
 
 footer {
+
   height: 165px;
   display: block;
   background-size: contain;
   background-image: url('../images/combined.jpeg');
   opacity: .85;
+}
+
+footer p {
+  text-align: center;
+  color: gray;
 }
