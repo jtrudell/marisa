@@ -12,16 +12,17 @@ html {
 .container {
   width: 75%;
   margin: 0 auto;
-  font-family: "brandon", serif;
+  font-family: 'Kotta One', serif;
+  color: #A39B9B;
 }
 
 a {
   text-decoration: none;
-  color: #CCCCCC;
+  color: #C7CCC2;
 }
 
 a:hover {
-  color: #5B6AAB;
+  color: #D3A7FF;
 }
 
 
@@ -51,6 +52,10 @@ header {
   padding-right: 0.50em;
 }
 
+#upper-left-header-container a:hover {
+  color: #D3A7FF;
+}
+
 #upper-right-header-container {
   display: inline-block;
   float: right;
@@ -60,6 +65,8 @@ header {
   font-size: 4em;
   width: 250px;
   margin: 0 auto;
+  color: #D3A7FF;
+  font-family: 'Kaushan Script', cursive;
 }
 
 #instagram-connect {
@@ -71,14 +78,6 @@ header {
   display: block;
   text-align: left;
 }
-
-.ig-b- { display: inline-block; }
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-32 { width: 32px; height: 32px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-32.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-32 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-32@2x.png); background-size: 60px 178px; } }
-
 
 nav {
   width: 75%;
@@ -96,6 +95,7 @@ nav ul {
 nav li {
   list-style: none;
   display: inline-block;
+  color: #C7CCC2;
 }
 
 /*MAIN ELEMENT STYLING*/
@@ -173,7 +173,7 @@ main {
 /*FOOTER STYLING*/
 
 footer {
-  height: 200px;
+  height: 100px;
   display: block;
-  background: darkgray;
+  background: #D3A7FF;
 }
