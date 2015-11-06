@@ -19,7 +19,13 @@ end
 
 get "/tags/:tag" do
   session[:tag] = params[:tag]
-  redirect "/"
+  if request.xhr?
+    @tag_title = params[:tag]
+    @instagram_images = generate_instagram_images(session[:tag])
+    erb :"_instagram", { layout: false }
+  else
+    redirect "/"
+  end
 end
 
 get "/instagram/oauth" do
