@@ -1,9 +1,22 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+var getInstagramId = $.ajax({
+  url: "https://api.instagram.com/v1/users/search?q=msg0927&client_id=a963ba34ecb443bcbaeafa815a9154a9",
+  method: "get"
+});
+
+var instagramId = getInstagramId.done(function(response){
+  return response;
+});
+
+console.log(instagramId);
+
+//   $.ajax({
+//     url: "https://api.instagram.com/v1/users/" + instagramId + "/media/recent/",
+//     method: "get"
+//   })
+//
 });
 
 // TWITTER SHARE
