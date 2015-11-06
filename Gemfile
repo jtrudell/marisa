@@ -18,6 +18,8 @@ gem 'shotgun'
 
 gem 'bing-search'
 
+gem 'twitter'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
