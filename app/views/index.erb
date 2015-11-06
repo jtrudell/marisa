@@ -45,7 +45,14 @@
 
     <div id = "main-div-footer">some stuff in a gray bar here</div>
 
-  <div id="shop">scroll some twitter shopping stuff here</div>
+  <div id="shop">scroll some twitter shopping stuff here
+    <% @twitter_feed.each do |tweet| %>
+      <span class="single-tweet">
+        <h3><%=tweet.user.name%></h3>
+        <p><%=tweet.text%></p>
+      </span>
+    <%end%>
+  </div>
 
   <div id="articles">
     <%@articles.each do |article|%>
