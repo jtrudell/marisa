@@ -2,6 +2,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Kotta One', serif;
+
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -12,7 +14,6 @@ html {
 .container {
   width: 75%;
   margin: 0 auto;
-  font-family: 'Kotta One', serif;
   color: #A39B9B;
 }
 
@@ -86,7 +87,7 @@ nav {
 }
 
 nav ul {
-    width: 400px;
+    width: 550px;
     height: 80px;
     margin: 0 auto;
     padding: 2em;
@@ -96,6 +97,7 @@ nav li {
   list-style: none;
   display: inline-block;
   color: #C7CCC2;
+  padding-left: 1em;
 }
 
 /*MAIN ELEMENT STYLING*/
@@ -109,7 +111,6 @@ main {
 #main-content-left {
   width: 60%;
   float: left;
-  border: 1px dotted black;
   margin-bottom: 2em;
 
 }
@@ -118,7 +119,6 @@ main {
   width: 40%;
   float: right;
   margin: 0 auto;
-  border: 1px dotted black;
   margin-top: 1em;
   padding-left: 1em;
 }
@@ -128,13 +128,22 @@ main {
 }
 
 #main-div-footer {
-  height: 50px;
+  border-top: 2px solid lightgray;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  text-align: center;
   margin: 0 auto;
-  background: lightgray;
+  margin-top: 0;
+  background: whitesmoke;
   display: block;
   clear: both;
-  border: 1px solid lightgray;
+  font-size: 2em;
 }
+
+#main-div-footer p {
+  margin: 0;
+}
+
 
 /*SHOP STYLING*/
 
@@ -156,7 +165,7 @@ main {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   margin-top: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 
 #articles a {
@@ -170,10 +179,21 @@ main {
   color: darkgray;
 }
 
+#article-header {
+  text-align: center;
+  color: #D3A7FF;
+
+}
+
 /*FOOTER STYLING*/
 
 footer {
   height: 100px;
   display: block;
   background: #D3A7FF;
+}
+
+footer p {
+  text-align: center;
+  color: gray;
 }

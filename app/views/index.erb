@@ -40,11 +40,15 @@
       <% end %>
     </div>
 
-    <div id = "main-div-footer">some stuff in a gray bar here</div>
+    <div id = "main-div-footer">
+      <a herf="https://www.bideawee.org/Donate-Now"><img src="/images/bideawee.png"/>
+      <p>donate to bideawee!</p>
+    </div>
 
   <div id="shop">scroll some twitter shopping stuff here</div>
 
   <div id="articles">
+    <h2 id="article-header">meowrisa recommends</h2>
     <%@articles.each do |article|%>
       <span class='article-span'>
         <a href="<%=article.url%>"><%=article.title%></a>
@@ -55,4 +59,4 @@
 </main>
 </div>
 
-  <footer>footer stuff here</footer>
+  <footer><p>copyright 2015 ben & jen</p></footer>
