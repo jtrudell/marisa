@@ -37,8 +37,18 @@ header {
 }
 
 #upper-left-header-container {
+  margin-top: 1em;
   display: inline-block;
   float: left;
+}
+
+#instagram-oauth {
+  padding-bottom: 1em;
+}
+#upper-left-header-container div {
+  display: inline-block;
+  float: left;
+  padding-right: 1em;
 }
 
 #upper-right-header-container {
@@ -62,10 +72,17 @@ header {
   text-align: left;
 }
 
-
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-32 { width: 32px; height: 32px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-32.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.ig-b-32 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-32@2x.png); background-size: 60px 178px; } }
 
 
 nav {
+  width: 75%;
+  margin: 0 auto;
   border-bottom: 2px solid lightgray;
 }
 
@@ -84,50 +101,49 @@ nav li {
 /*MAIN ELEMENT STYLING*/
 
 main {
-  height: 500px;
-  margin-top: 2em;
+  padding: 2em;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #main-content-left {
-  width: 65%;
+  width: 60%;
   float: left;
-  margin: 0 auto;
   border: 1px dotted black;
+  margin-bottom: 2em;
+
 }
 
 #main-content-right {
-  height: 400px;
-  width: 30%;
+  width: 40%;
   float: right;
   margin: 0 auto;
   border: 1px dotted black;
+  margin-top: 2em;
 }
-
 
 #main-div-footer {
   height: 50px;
-  width: 75%;
   margin: 0 auto;
   background: lightgray;
   display: block;
   clear: both;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
 /*SHOP STYLING*/
 
 #shop {
-  width: 75%;
   margin: 0 auto;
+  margin-top: 2em;
   height: 200px;
   display: block;
-  background: red;
+  background: lightblue;
 }
 
 /*ARTICLES STYLING*/
 
 #articles {
-  width: 75%;
   margin: 0 auto;
   display: block;
   background: white;
@@ -152,7 +168,7 @@ main {
 /*FOOTER STYLING*/
 
 footer {
-  height: 400px;
+  height: 200px;
   display: block;
   background: darkgray;
 }
