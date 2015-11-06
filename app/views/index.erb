@@ -3,16 +3,24 @@
   <header>
     <div id = "top-header">
       <div id="upper-left-header-container">
-          <div><a href="/instagram/oauth">login to instagram</a></div>
-          <div>put social buttons here</div>
+        <div id = "instagram-oauth"><a href="/instagram/oauth">login to instagram</a></div><br>
+          <div>
+            <div id= "twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a></div>
+
+            <div id="fb-root"></div>
+            <div class="fb-like" data-href="https://meowrisa.herokuapp.com/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+          </div>
+
+
+<a href="http://instagram.com/msg0927?ref=badge" class="ig-b- ig-b-32"><img src="//badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
       </div>
 
       <div id="site-name">meowrisa</div>
 
-      <div id="upper-right-header-container">
+      <!-- <div id="upper-right-header-container">
         <div id="login-signup">login signup links</div>
         <div id="search">search bar</div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -32,7 +40,8 @@
 
   <main>
     <div id="main-content-left"><blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC)"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/7JNIwulFDa/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by Marisa (@msg0927)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-09-02T21:47:14+00:00">Sep 2, 2015 at 2:47pm PDT</time></p></div></blockquote>
-    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script></div>
+    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+  </div>
 
     <div id="main-content-right">
       <% @instagram_images.each do |image| %>
@@ -42,7 +51,7 @@
 
     <div id = "main-div-footer">some stuff in a gray bar here</div>
 
-  <div id="shop">scroll some shopping stuff here</div>
+  <div id="shop">scroll some twitter shopping stuff here</div>
 
   <div id="articles">
     <%@articles.each do |article|%>
