@@ -9,7 +9,7 @@ Instagram.configure do |config|
 end
 
 get "/" do
-  params[:tag] ? tag = params[:tag] : tag = "purple"
+  params[:tag] ? tag = params[:tag] : tag = "bideawee"
   @articles = find_articles
   @instagram_images = generate_instagram_images(tag)
   erb :index
