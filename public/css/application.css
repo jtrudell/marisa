@@ -195,9 +195,12 @@ main {
 /*FOOTER STYLING*/
 
 footer {
-  height: 100px;
+
+  height: 165px;
   display: block;
-  background: #D3A7FF;
+  background-size: contain;
+  background-image: url('../images/combined.jpeg');
+  opacity: .85;
 }
 
 footer p {
