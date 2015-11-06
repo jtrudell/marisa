@@ -12,6 +12,7 @@ get "/" do
   params[:tag] ? tag = params[:tag] : tag = "bideawee"
   @articles = find_articles
   @instagram_images = generate_instagram_images(tag)
+  @twitter_feed = find_twitter
   erb :index
 end
 
