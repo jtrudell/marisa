@@ -60,7 +60,7 @@ end
 
 get "/user_media_feed" do
   client = Instagram.client(:access_token => session[:access_token])
-  user = client.user
+  user = session[:msg]
   html = "<h1>#{user.username}'s media feed</h1>"
 
   page_1 = client.user_media_feed(777)
@@ -80,11 +80,9 @@ end
 
 get "/user_search" do
   client = Instagram.client(:access_token => session[:access_token])
-  html = "<h1>Search for users on instagram, by name or usernames</h1>"
   for user in client.user_search("msg0927")
-    html << "<li> <img src='#{user.profile_picture}'> #{user.username} #{user.full_name}</li>"
+    session[:msg] = user
   end
-  html
 end
 
 
