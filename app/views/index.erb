@@ -45,7 +45,14 @@
       <p>donate to bideawee!</p>
     </div>
 
-  <div id="shop">scroll some twitter shopping stuff here</div>
+  <div id="shop">scroll some twitter shopping stuff here
+    <% @twitter_feed.each do |tweet| %>
+      <span class="single-tweet">
+        <h3><%=tweet.user.name%></h3>
+        <p><%=tweet.text%></p>
+      </span>
+    <%end%>
+  </div>
 
   <div id="articles">
     <h2 id="article-header">meowrisa recommends</h2>

@@ -12,6 +12,7 @@ require 'uri'
 require 'pathname'
 
 require 'bing-search'
+require 'twitter'
 
 require 'pg'
 require 'active_record'

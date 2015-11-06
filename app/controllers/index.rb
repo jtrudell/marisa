@@ -12,6 +12,7 @@ get "/" do
   session[:tag] ? tag = session[:tag] : tag = "bideawee"
   @articles = find_articles
   @instagram_images = generate_instagram_images(tag)
+  @twitter_feed = find_twitter
   @tag_title = tag
   erb :index
 end
