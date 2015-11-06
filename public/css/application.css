@@ -34,7 +34,7 @@ header {
 }
 
 #top-header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(114, 22, 147);
   height: 100px;
 }
 
@@ -83,7 +83,7 @@ header {
 nav {
   width: 75%;
   margin: 0 auto;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid rgb(114, 22, 147);
 }
 
 nav ul {
@@ -96,7 +96,7 @@ nav ul {
 nav li {
   list-style: none;
   display: inline-block;
-  color: #C7CCC2;
+  color: #383838;
   padding-left: 1em;
 }
 
@@ -128,7 +128,7 @@ main {
 }
 
 #main-div-footer {
-  border-top: 2px solid lightgray;
+  border-top: 2px solid rgb(114, 22, 147);
   padding-top: 1.5em;
   padding-bottom: 0;
   text-align: center;
@@ -152,7 +152,7 @@ main {
   margin-top: 2em;
   display: block;
   padding: 1em;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid rgb(114, 22, 147);
   margin-top: 2em;
   padding-bottom: 0.5em;
 }
@@ -169,8 +169,8 @@ main {
   display: block;
   background: white;
   padding: 1em;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid rgb(114, 22, 147);
+  border-bottom: 1px solid rgb(114, 22, 147);
   margin-top: 2em;
   padding-bottom: 0.5em;
 }

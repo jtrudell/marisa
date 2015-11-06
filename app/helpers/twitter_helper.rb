@@ -6,9 +6,7 @@ def find_twitter
     config.access_token_secret = "OYoVNXbL5wgWjpmCaQwttQ7S3c2QesYYmDbxrE4VhRzgJ"
   end
 
-  tweets = client.search("cats").take(2)
-  tweets << client.search("yoga").take(2)
-  tweets << client.search("travel").take(2)
+  tweets = client.search("cats").take(6)
 
   return tweets.flatten.shuffle
 end
