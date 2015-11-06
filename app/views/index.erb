@@ -12,21 +12,17 @@
 
       <div id="site-name">meowrisa</div>
 
-      <!-- <div id="upper-right-header-container">
-        <div id="login-signup">login signup links</div>
-        <div id="search">search bar</div>
-      </div> -->
   </div>
 
     <nav>
       <ul>
-        <li>SHOP</li>
-        <li>GO</li>
-        <li>BE</li>
-        <li>DO</li>
-        <li>SEE</li>
-        <li>MAKE</li>
-        <li>GET</li>
+        <li><a href = "/tags/purplefashion">FASHION<a></li>
+        <li><a href = "/tags/bideawee">CATS<a></li>
+        <li><a href = "/tags/meditation">MEDITATION<a></li>
+        <li><a href = "/tags/eatpraymove">YOGA<a></li>
+        <li><a href = "tags/canyonranch">TRAVEL<a></li>
+        <li><a href = "tags/purple">PURPLE<a></li>
+
       <ul>
     </nav>
 
@@ -38,6 +34,7 @@
   </div>
 
     <div id="main-content-right">
+      <h3>Instagram #<%= @tag_title %></h3>
       <% @instagram_images.each do |image| %>
         <%= image %>
       <% end %>

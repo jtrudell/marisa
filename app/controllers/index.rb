@@ -9,10 +9,16 @@ Instagram.configure do |config|
 end
 
 get "/" do
-  params[:tag] ? tag = params[:tag] : tag = "bideawee"
+  session[:tag] ? tag = session[:tag] : tag = "bideawee"
   @articles = find_articles
   @instagram_images = generate_instagram_images(tag)
+  @tag_title = tag
   erb :index
+end
+
+get "/tags/:tag" do
+  session[:tag] = params[:tag]
+  redirect "/"
 end
 
 get "/instagram/oauth" do
